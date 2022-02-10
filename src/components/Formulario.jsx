@@ -1,6 +1,14 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+
+
+
 
 const Formulario = () => {
+  const [nombre, setNombre] = useState('');
+    
+
+
+
   return (
 
     <div className='md:w-1/2 lg:w-2/5'>
@@ -23,6 +31,8 @@ const Formulario = () => {
             type="text"
             placeholder='Nombre de la Mascota'
             className='border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md'
+            value={nombre}
+            onChange={(e) => setNombre(e.target.value)}
           />
         </div>
 
@@ -52,7 +62,7 @@ const Formulario = () => {
 
         <div className='mb-5'>
           <label htmlFor='alta' className='block text-gray-700 uppercase font-bold'>
-            Email
+            Fecha de Ingreso
           </label>
           <input
             id='alta'

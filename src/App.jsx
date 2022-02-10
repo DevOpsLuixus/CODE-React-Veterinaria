@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Formulario from './components/Formulario';
 import Header from './components/Header';
 import { ListadoPacientes } from './components/ListadoPacientes';
@@ -9,6 +9,9 @@ import { ListadoPacientes } from './components/ListadoPacientes';
 
 function App() {
   //codigo javascript
+  const [paciente, setPaciente] = useState([]);
+
+
 
   return (
     //lo que se va en pantalla
